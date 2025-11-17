@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #262c4d;
+  font-family: "Open Sans", sans-serif;
+}
+
+.movies {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 80px auto 0 auto;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.movie-card {
+  width: 550px;
+  height: 310px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.movie-poster {
+  max-width: 230px;
+}
+
+.movie-poster img {
+  cursor: pointer;
+  width: 190px;
+  height: 100%;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.movie-poster img:hover {
+  transform: scale(1.2) rotate(-5deg) translateY(-20px);
+  margin-right: 120px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.movie-info {
+  margin-top: 20px;
+  margin-left: 35px;
+  color: #919296;
+}
+
+.movie-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.movie-year {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.movie-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #211c38;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #71407a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f449e;
+}
