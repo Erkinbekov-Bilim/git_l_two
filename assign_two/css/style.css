@@ -1,0 +1,186 @@
+.header {
+  padding: 15px 0;
+  background: #373d5f;
+}
+
+.header-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-block-search {
+  width: 50%;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 30px;
+}
+
+.search-input:focus {
+  outline: none;
+  border: 1px solid rgb(255, 228, 152);
+}
+
+.header-block-auth {
+  width: 10%;
+}
+
+.button-auth {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background: rgb(152, 167, 255);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  gap: 40px;
+}
+
+.nav {
+  background: #211c38;
+  border-radius: 26px;
+  padding: 30px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-list li {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-list li:hover {
+  transform: scale(1.2);
+  color: rgb(152, 167, 255);
+}
+
+.nav-list a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.movie-card {
+  width: 400px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.movie-poster {
+  max-width: 230px;
+}
+
+.movie-poster img {
+  cursor: pointer;
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.movie-poster img:hover {
+  transform: scale(1.2) rotate(-5deg) translateY(-20px);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.movie-info {
+  margin-top: 20px;
+  margin-left: 35px;
+  color: #919296;
+}
+
+.movie-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.movie-year {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.movie-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #211c38;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #71407a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f449e;
+}
+
+.footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  background: #373d5f;
+  margin-bottom: auto;
+}
+
+.footer-block-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-block-content li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
