@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-block">
           <ul className="footer-block-content">
-            {footer.map((link) => (
-              <li>
+            {footer.map((link, index) => (
+              <li key={index}>
                 <a href="#">{link}</a>
               </li>
             ))}

@@ -6,8 +6,8 @@ const Aside = () => {
       <aside>
         <nav className="nav">
           <ul className="nav-list">
-            {nav.map((link) => (
-              <li>
+            {nav.map((link, index) => (
+              <li key={index}>
                 <a href="#">{link}</a>
               </li>
             ))}
